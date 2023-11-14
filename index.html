@@ -1,61 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind curs4</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    />
-    <!-- Option 1: Include in HTML -->
 
-    <script>
-      tailwind.config = {
-        theme: {
-          fontSize: {
-            xsm: "0.8rem",
-            xxl: "3rem",
-            xl: "2rem",
-            sm: "1rem",
-            xs: "1rem",
-          },
-          backgroundImage: {
-            casa1: "url('img1.jpg')",
-            casa2: "url('img2.jpg')",
-            casa3: "url('img3.jpg')",
-          },
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind curs4</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
+  <!-- Option 1: Include in HTML -->
+
+  <script>
+    tailwind.config = {
+      theme: {
+        fontSize: {
+          xsm: "0.8rem",
+          xxl: "3rem",
+          xl: "2rem",
+          sm: "1.1rem",
+          xs: "1rem",
         },
-      };
-    </script>
-  </head>
-   <!-- Left Menu -->
-   <div class="fixed left-0 top-0 h-full bg-gray-800 text-white p-4">
-    <!--  menu links -->
-    <ul>
-        <li><a href="#" class="hover:text-gray-300">Acasa</a></li>
-        <li><a href="#" class="hover:text-gray-300">Despre noi</a></li>
-        <li><a href="#" class="hover:text-gray-300">Evenimente</a></li>
-        <li><a href="#" class="hover:text-gray-300">Ce oferim</a></li>
-        <li><a href="#" class="hover:text-gray-300">Dezvoltare personala</a></li>
-        <li><a href="#" class="hover:text-gray-300">Dezvoltare spirituala</a></li>
-        <li><a href="#" class="hover:text-gray-300">Proiecte</a></li>
-        <li><a href="#" class="hover:text-gray-300">Resurse</a></li>
-        <li><a href="#" class="hover:text-gray-300">Alatura-te</a></li>
-        <li><a href="#" class="hover:text-gray-300">Galerie</a></li>
-        <li><a href="#" class="hover:text-gray-300">Contact</a></li>
-    </ul>
-</div>
+        backgroundImage: {
+          casa1: "url('images/header2.jpg')",
+          casa2: "url('images/img1.jpg')",
+          casa3: "url('images/img2.jpg')",
+        },
+      },
+    };
+  </script>
+</head>
 
-<!-- Yellow Header Div -->
-<div class="bg-yellow-500 h-16"></div>
+<body class="font-sans bg-gray-100">
 
-<!-- Content Section -->
-<div class="ml-64 p-8">
-    <!-- Your page content goes here -->
-    <h1 class="text-3xl font-bold mb-4">Your Page Title</h1>
-    <p>Your content goes here.</p>
-</div>
-  </body>
+  <div class="flex flex-row">
+
+    <div class="bg-gray-800 text-white p-4 h-100% flex flex-col">
+      <div><a href="index.html" class="hover:text-gray-300  flex mb-2 text-sm">Acasa</a></div>
+      <div><a href="about-us.html" class="hover:text-gray-300 flex mb-2 text-sm">Despre noi</a></div>
+      <div><a href="#" class="hover:text-gray-300 flex mb-2 text-sm">Evenimente</a></div>
+      <div><a href="#" class="hover:text-gray-300 flex mb-2 text-sm">Ce oferim</a></div>
+      <div><a href="#" class="hover:text-gray-300 flex mb-2 text-sm">Dezvoltare personala</a></div>
+      <div><a href="#" class="hover:text-gray-300 flex mb-2 text-sm">Dezvoltare spirituala</a></div>
+      <div><a href="#" class="hover:text-gray-300 flex mb-2 text-sm">Proiecte</a></div>
+      <div><a href="#" class="hover:text-gray-300 flex mb-2 text-sm">Resurse</a></div>
+      <div><a href="#" class="hover:text-gray-300 flex mb-2 text-sm">Alatura-te</a></div>
+      <div><a href="#" class="hover:text-gray-300 flex mb-2 text-sm">Galerie</a></div>
+      <div><a href="#" class="hover:text-gray-300 flex mb-2 text-sm">Contact</a></div>
+    </div>
+
+    <div class="bg-gray-200 flex-1 flex-col flex">
+
+      <!--Header-->
+      <div class="bg-casa1 bg-center bg-cover h-60 flex items-center justify-center">
+        
+        <div class="text-xxl font-bold">International teachers comunity</div>
+      </div>
+
+      <div class="flex flex-row bg-gray-400 h-80">
+       <div class="sm:w-1/2 flex items-center justify-center m-4">
+        <div>Suntem o comunitate care vine în sprijinul
+          profesorilor din România, încurajându-i la
+          dezvoltare personală, profesională și
+          spirituală pentru a avea o infuență pozitivă
+          nu doar în sălile de clasă, ci și în întreaga
+          comunitate.</div>
+       </div>
+       <div class="sm:w-1/2 bg-casa2 bg-cover rounded-full m-6">
+       
+       </div> 
+      </div>
+
+      <div class="flex flex-row bg-gray-400 h-80">
+        
+        <div class="sm:w-1/2 bg-casa3 bg-center bg-cover rounded-full m-6">
+       
+        </div> 
+        <div class="sm:w-1/2 flex items-center justify-center m-4">
+          <div>Echipăm profesorii pentru schimbarea în
+            bine a societății</div>
+        </div>
+
+       </div>
+
+    </div>
+
+  </div>
+
+</body>
+
 </html>
