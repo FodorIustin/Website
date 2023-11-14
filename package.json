@@ -1,0 +1,11 @@
+{
+  "name": "WebSite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/FodorIustin/Website.git",
+  "author": "FodorIustin <iustin.fodor@emanuel.ro>",
+  "license": "MIT",
+  "dependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}
