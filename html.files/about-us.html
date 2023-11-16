@@ -7,7 +7,7 @@
   <title>Tailwind curs4</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-
+  <link rel="stylesheet" href="style.css">
   <!-- Option 1: Include in HTML -->
 
   <script>
@@ -22,7 +22,7 @@
         },
         backgroundImage: {
           casa1: "url('../images/header2.jpg')",
-          casa2: "url('../images/img2.jpeg')",
+          casa2: "url('../images/img2-gallery.jpg')",
           casa3: "url('../images/img1-about.jpg')",
         },
       },
@@ -34,8 +34,13 @@
 
   <div class="flex flex-row">
 
-    <div class="bg-gray-800 text-white p-4 h-100% flex flex-col">
-      <div><a href="index.html" class="hover:text-gray-300  flex mb-2 text-sm">Acasa</a></div>
+    <div class="bg-gray-800 text-white p-4 h-100% flex flex-col sm:block hidden">
+      <div class="flex items-center">
+        <a href="index.html" class="hover:text-gray-300 flex mb-2 text-sm">Acasa</a>
+        <div class="flex items-center ml-auto">
+          <i class="bi bi-list"></i>
+        </div>
+      </div>
       <div><a href="about-us.html" class="hover:text-gray-300 flex mb-2 text-sm">Despre noi</a></div>
       <div><a href="events.html" class="hover:text-gray-300 flex mb-2 text-sm">Evenimente</a></div>
       <div><a href="offers.html" class="hover:text-gray-300 flex mb-2 text-sm">Ce oferim</a></div>
@@ -54,26 +59,29 @@
       <div class="bg-casa1 bg-center bg-cover h-60 flex items-center justify-center">
         
         <div class="text-xxl font-bold">Despre noi</div>
+        <div class="lg:hidden flex items-center  ml-auto text-xl mr-3">
+          <i class="bi bi-list"></i>
+        </div>
       </div>
 
-      <div class="flex flex-row bg-gray-400 h-80">
-        <div class="sm:w-1/2 flex items-center justify-center m-4">
-          <div>Am format o comunitate în care profesorii
+      <div class="flex flex-row sm:flex-row bg-gray-400 h-80">
+        <div class="w-1/2 flex items-center justify-center m-4  text-pop-up-top">
+          <div class="">Am format o comunitate în care profesorii
             învață unii de la alții, fac schimb de
             experiențe şi se încurajează reciproc, pentru
             a deveni astfel cei mai buni profesori care
             pot fi. </div>
          </div>
-         <div class="sm:w-1/2 bg-casa2 bg-cover bg-center rounded-[35%] m-6">
+         <div class="w-1/2 bg-casa2 bg-cover rounded-[20%] m-6">
          
          </div> 
       </div>
 
       <div class="flex flex-row bg-gray-400 h-80">
-        <div class="sm:w-1/2 bg-casa3 bg-center bg-cover rounded-full m-6">
+        <div class="w-1/2 bg-casa3 bg-center bg-cover rounded-full m-6">
        
         </div> 
-        <div class="sm:w-1/2 flex items-center justify-center m-4">
+        <div class="w-1/2 flex items-center justify-center m-4  text-pop-up-top">
           <div>Mai mult de 30 profesoare au participat în primăvara anului 2022 la cursuri săptămânale de dezvoltare personală, profesională și spirituală.</div>
         </div>
       
