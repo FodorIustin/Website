@@ -21,9 +21,10 @@
           xs: "1rem",
         },
         backgroundImage: {
-          casa1: "url('images/header2.jpg')",
-          casa2: "url('images/img1.jpg')",
-          casa3: "url('images/img2.jpg')",
+          casa1: "url('../images/img1-join.jpg')",
+          casa2: "url('../images/img2-join.jpg')",
+          casa3: "url('../images/img3-join.jpg')",
+          casa4: "url('../images/img4-join.png')",
         },
       },
     };
@@ -51,19 +52,29 @@
     <div class="bg-gray-200 flex-1 flex-col flex">
 
       <!--Header-->
-      <div class="bg-casa1 bg-center bg-cover h-60 flex items-center justify-center">
+      <div class=" bg-center bg-cover h-60 flex items-center justify-center">
         
         <div class="text-xxl font-bold">Alatura-te</div>
       </div>
 
       <div class="flex flex-row bg-gray-400 h-80">
-       
+        <div class="sm:w-1/2 bg-casa1 bg-cover bg-center rounded-md m-6"></div>
+        <div class="sm:w-1/2 bg-casa2 bg-cover bg-center rounded-md m-6"></div>
+      </div>
+      <div class="flex bg-gray-400">
+        <div class="sm:w-1/2 flex justify-center">Cooperare</div>
+        <div class="sm:w-1/2 flex justify-center">Spirit de echipa</div>
       </div>
 
       <div class="flex flex-row bg-gray-400 h-80">
-        
-      
-       </div>
+        <div class="sm:w-1/2 bg-casa3 bg-cover bg-center rounded-md m-6"></div>
+        <div class="sm:w-1/2 bg-casa4 bg-cover bg-center rounded-md m-6"></div>
+      </div>
+      <div class="flex bg-gray-400">
+        <div class="sm:w-1/2 flex justify-center h-12">Dezvoltare personala</div>
+        <div class="sm:w-1/2 flex justify-center h-12">Conectare</div>
+      </div>
+     
 
     </div>
 

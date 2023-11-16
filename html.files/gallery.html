@@ -21,9 +21,14 @@
           xs: "1rem",
         },
         backgroundImage: {
-          casa1: "url('images/header2.jpg')",
-          casa2: "url('images/img1.jpg')",
-          casa3: "url('images/img2.jpg')",
+          casa1: "url('../images/img1-gallery.jpg')",
+          casa2: "url('../images/img2-gallery.jpg')",
+          casa3: "url('../images/img5-gallery.jpg')",
+          casa4: "url('../images/img4-gallery.jpg')",
+          casa5: "url('../images/img6-gallery.jpg')",
+          casa6: "url('../images/img7-gallery.jpg')",
+          casa7: "url('../images/img7-gallery.jpg')",
+          casa8: "url('../images/img8-gallery.png')",
         },
       },
     };
@@ -51,17 +56,34 @@
     <div class="bg-gray-200 flex-1 flex-col flex">
 
       <!--Header-->
-      <div class="bg-casa1 bg-center bg-cover h-60 flex items-center justify-center">
+      <div class=" bg-center bg-cover h-60 flex items-center justify-center">
         
         <div class="text-xxl font-bold">Galerie</div>
       </div>
 
-      <div class="flex flex-row bg-gray-400 h-80">
-       
+      <div class="flex flex-row bg-gray-400 h-96">
+
+       <div class="sm:w-1/2 flex flex-col">
+        <div class="flex sm:h-1/2">
+          <div class="sm:w-1/2 bg-casa3 bg-cover bg-center rounded-md m-6"></div>
+          <div class="sm:w-1/2 bg-casa4 bg-cover bg-center rounded-md m-6"></div>
+        </div>
+
+        <div class="flex sm:h-1/2">
+          <div class="sm:w-1/2 bg-casa5 bg-cover bg-center rounded-md m-6"></div>
+          <div class="sm:w-1/2 bg-casa6 bg-cover bg-center rounded-md m-6"></div>
+        </div>
+       </div>
+
+       <div class="sm:w-1/2 flex items-center justify-center flex-row">
+        <div class="sm:w-1/2 h-1/2 bg-casa7 bg-cover bg-center rounded-md m-6"></div>
+        <div class="sm:w-1/2 h-1/2 bg-casa8 bg-cover bg-center rounded-md m-6"></div>
+       </div>
       </div>
 
       <div class="flex flex-row bg-gray-400 h-80">
-        
+        <div class="sm:w-1/2 bg-casa1 bg-cover bg-center rounded-md m-6"></div>
+        <div class="sm:w-1/2 bg-casa2 bg-cover bg-center rounded-md m-6"></div>
       
        </div>
 
