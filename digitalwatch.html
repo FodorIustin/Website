@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Watch</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    canvas {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    function setup() {
+      createCanvas(400, 200);
+    }
+
+    function draw() {
+      background(255);
+
+      let now = new Date();
+      let hours = nf(now.getHours(), 2, 0);
+      let minutes = nf(now.getMinutes(), 2, 0);
+      let seconds = nf(now.getSeconds(), 2, 0);
+
+      let timeString = hours + ':' + minutes + ':' + seconds;
+
+      textAlign(CENTER, CENTER);
+      textSize(64);
+      fill(0);
+      text(timeString, width / 2, height / 2);
+    }
+  </script>
+</body>
+</html>
